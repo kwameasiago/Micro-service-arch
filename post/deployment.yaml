@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: post-deployment
+  labels:
+    app: post-api
+spec:
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: post-api
+  template: 
+    metadata:
+      labels:
+        app: post-api
+    spec: 
+      containers:
+      - name: post
+        image: post:latest
+        imagePullPolicy: Never
+        ports: 
+        - containerPort: 3001
+  
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: post-service
+spec:
+  selector:
+    app: post-api
+  ports:
+    - port: 3001
+      targetPort: 3001

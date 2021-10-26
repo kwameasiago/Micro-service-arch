@@ -1,0 +1,20 @@
+{
+  "name": "micro-service-arch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwameasiago/Micro-service-arch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwameasiago/Micro-service-arch/issues"
+  },
+  "homepage": "https://github.com/kwameasiago/Micro-service-arch#readme",
+  "type": "module"
+}
